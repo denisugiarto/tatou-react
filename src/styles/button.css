@@ -1,0 +1,92 @@
+.btn {
+  @apply !normal-case !font-normal btn-md;
+}
+
+.btn-sm {
+  @apply h-9 text-sm;
+  min-height: unset;
+}
+
+.btn-md {
+  @apply h-10 text-sm;
+  min-height: unset;
+}
+
+.btn-lg {
+  @apply h-11 text-base;
+  min-height: unset;
+}
+
+.btn-xl {
+  @apply text-base;
+  height: 52px;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-error,
+.btn-success,
+.btn-info,
+.btn-warning {
+  @apply text-white;
+}
+
+/* btn state */
+.btn-primary:hover {
+  @apply bg-primary-hover;
+}
+.btn-primary:active {
+  @apply bg-primary-pressed;
+}
+
+.btn-error:hover {
+  @apply bg-error-hover;
+}
+.btn-error:active {
+  @apply bg-error-pressed;
+}
+.btn-info:hover {
+  @apply bg-info-hover;
+}
+.btn-info:active {
+  @apply bg-info-pressed;
+}
+.btn-success:hover {
+  @apply bg-success-hover;
+}
+.btn-success:active {
+  @apply bg-success-pressed;
+}
+.btn-warning:hover {
+  @apply bg-warning-hover;
+}
+.btn-warning:active {
+  @apply bg-warning-pressed;
+}
+
+/* btn-outline */
+.btn-outline.btn-primary:hover,
+.btn-outline.btn-secondary:hover,
+.btn-outline.btn-error:hover,
+.btn-outline.btn-success:hover,
+.btn-outline.btn-info:hover,
+.btn-outline.btn-warning:hover {
+  @apply text-white;
+}
+
+/* Circle */
+.btn-circle:where(.btn-sm) {
+  @apply w-8 h-8;
+}
+
+.btn-circle:where(.btn-md) {
+  @apply w-10;
+}
+
+.btn-circle:where(.btn-lg) {
+  @apply w-11;
+}
+
+.btn-circle:where(.btn-xl) {
+  width: 52px;
+}
