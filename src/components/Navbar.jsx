@@ -54,13 +54,13 @@ const Navbar = ({
                                     />
                                 </div>
                             ) : (
-                                <a
+                                <Link
                                     href="/signin"
                                     className="btn btn-outline btn-primary btn-sm bg-white"
                                 >
                                     Sign in
                                     <i className="fas fa-sign-in-alt ml-2" />
-                                </a>
+                                </Link>
                             ))}
                         {isSupportMaraeHapuActive && (
                             <button className="btn bg-white text-primary !btn-sm">
