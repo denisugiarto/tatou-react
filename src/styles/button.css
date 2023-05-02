@@ -28,7 +28,7 @@
 .btn-success,
 .btn-info,
 .btn-warning {
-  @apply text-white;
+  @apply !text-white;
 }
 
 /* btn state */

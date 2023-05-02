@@ -1,13 +1,23 @@
 import { useMounted } from "@/hooks/use-mounted";
+import Head from "next/head";
 
-export default function Layout({ children }) {
+export default function Layout({ children, title, isWithBottomBar }) {
     const { hasMounted } = useMounted();
     return (
         <>
             {hasMounted && (
-                <main className="pb-6 bg-neutral-50 min-h-screen">
-                    {children}
-                </main>
+                <>
+                    <Head>
+                        <title>{title}</title>
+                    </Head>
+                    <main
+                        className={`${
+                            isWithBottomBar ? "pb-20" : "pb-6"
+                        } bg-neutral-50 min-h-screen`}
+                    >
+                        {children}
+                    </main>
+                </>
             )}
         </>
     );

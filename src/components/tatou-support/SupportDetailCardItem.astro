@@ -1,0 +1,56 @@
+---
+export interface Props {
+    icon?: string;
+    isFunding?: boolean;
+    classes?: string;
+    totalNeeded?: number;
+    totalGetSupport?: number;
+    name?: string;
+}
+
+const {
+    icon,
+    isFunding = false,
+    classes,
+    totalGetSupport,
+    totalNeeded,
+    name,
+} = Astro.props;
+---
+
+<div className="bg-primary-surface rounded px-4 py-2 text-sm flex items-center">
+    {
+        isFunding ? (
+            <>
+                <div className="flex-none">
+                    <i className="fas fa-dollar-sign text-primary mr-2 text-lg" />
+                </div>
+                <p className="grow text-center text-2xs">
+                    <span className="flex items-center gap-2 font-medium text-xs">
+                        <progress
+                            className="progress progress-primary bg-white border border-primary-border"
+                            value={totalGetSupport}
+                            max="100"
+                        />
+                        <span className="text-primary-pressed">
+                            {totalGetSupport}%
+                        </span>
+                    </span>
+                    Funding
+                </p>
+            </>
+        ) : (
+            <>
+                <div className="flex-none">
+                    <i className={`fas fa-${icon} text-primary mr-2 text-lg`} />
+                </div>
+                <p className="grow text-center text-2xs">
+                    <span className="block text-error font-medium text-xs">
+                        {totalGetSupport}<span className="text-primary-pressed">/{totalNeeded}</span>
+                    </span>
+                    {name}
+                </p>
+            </>
+        )
+    }
+</div>

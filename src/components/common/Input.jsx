@@ -28,7 +28,7 @@ const Input = ({
                 {/* input-error use for give red border in input element */}
                 <input
                     type={type}
-                    placeholder={placeholder}
+                    placeholder={`${type === "email" ? "example@example.com" : placeholder}`}
                     className={`input input-bordered w-full disabled:bg-white disabled:text-neutral-400 peer ${
                         icon ? "pl-11" : ""
                     } ${isRequired ? "input-error" : ""}`}

@@ -35,12 +35,11 @@ const Navbar = ({
                                 href={link}
                                 className="rounded-full overflow-hidden w-8 h-8 bg-white mr-auto"
                             >
-                                <div
-                                    className="h-full"
-                                    style={{
-                                        background:
-                                            "radial-gradient(50% 50% at 50% 50%, #74C5FF 0%, #FFFFFF 100%)",
-                                    }}
+                                <Image
+                                    src="/assets/icons/icon-logo.svg"
+                                    width={32}
+                                    height={32}
+                                    alt="tatou brand icon"
                                 />
                             </Link>
                         )}
@@ -51,6 +50,8 @@ const Navbar = ({
                                     <Image
                                         src="/assets/profile.png"
                                         alt="profile picture"
+                                        width={40}
+                                        height={40}
                                     />
                                 </div>
                             ) : (
