@@ -1,9 +1,9 @@
 import BottomNavbar from "@/components/BottomNavbar";
-import Button from "@/components/Button";
 import CardSupport from "@/components/CardSupport";
 import FixedButton from "@/components/FixedButton";
 import Layout from "@/components/Layout";
 import Navbar from "@/components/Navbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
 export default function Home() {
@@ -102,7 +102,8 @@ export default function Home() {
                 <BottomNavbar activeMenu={0} />
                 <FixedButton id="btnNewCampaign">
                     <button className="btn btn-primary font-medium drop-shadow-lg">
-                        <i className="fas fa-plus-circle mr-2"></i>Campaign
+                        <FontAwesomeIcon icon={"plus-circle"} className="mr-2" />
+                        Campaign
                     </button>
                 </FixedButton>
             </div>

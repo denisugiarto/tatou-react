@@ -1,4 +1,4 @@
-import { useMounted } from "@/hooks/use-mounted";
+import { useMounted } from "@/hooks/useMounted";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import InputPassword from "./InputPassword";
 

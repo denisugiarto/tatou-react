@@ -1,9 +1,6 @@
-import { useMounted } from "@/hooks/use-mounted";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const Navbar = ({
     link = "/",
@@ -60,12 +57,18 @@ const Navbar = ({
                                     className="btn btn-outline btn-primary btn-sm bg-white"
                                 >
                                     Sign in
-                                    <i className="fas fa-sign-in-alt ml-2" />
+                                    <FontAwesomeIcon
+                                        icon={"sign-in-alt"}
+                                        className="ml-2"
+                                    />
                                 </Link>
                             ))}
                         {isSupportMaraeHapuActive && (
                             <button className="btn bg-white text-primary !btn-sm">
-                                <i className="fas fa-plus-circle mr-1" />
+                                <FontAwesomeIcon
+                                    icon={"plus-circle"}
+                                    className="mr-1"
+                                />
                                 Support Marae/Hapu
                             </button>
                         )}

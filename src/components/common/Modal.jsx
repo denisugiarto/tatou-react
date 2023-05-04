@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom";
-import { useMounted } from "@/hooks/use-mounted";
+import { useMounted } from "@/hooks/useMounted";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Modal = ({ id, title = "", description = "" }) => {
     const { hasMounted } = useMounted();

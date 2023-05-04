@@ -1,4 +1,5 @@
-import { useMounted } from "@/hooks/use-mounted";
+
+import { useMounted } from "@/hooks/useMounted";
 import Head from "next/head";
 
 export default function Layout({ children, title, isWithBottomBar }) {

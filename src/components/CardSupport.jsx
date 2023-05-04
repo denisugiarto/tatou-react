@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import CardItem from "./tatou-support/CardItem";
+import CardItem from "./TatouSupport/CardItem";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const CardSupport = ({
     imgUrl,
@@ -30,7 +31,10 @@ const CardSupport = ({
                 </h2>
                 <p className="text-xs flex items-center">
                     Marae
-                    <i className="fas fa-circle w-2 h-2 ml-2 mr-1 text-primary"></i>
+                    <FontAwesomeIcon
+                        icon={"circle"}
+                        className="w-2 h-2 ml-2 mr-1 text-primary"
+                    />
                     Hapu name
                 </p>
                 <div className="flex items-center bg-primary-surface py-1 px-2 rounded gap-1 text-xs w-full">

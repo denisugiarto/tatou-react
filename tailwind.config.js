@@ -87,7 +87,7 @@ module.exports = {
             },
         },
     },
-    darkMode: "class",
+    darkMode: "className",
     plugins: [require("daisyui")],
     daisyui: {
         themes: [
