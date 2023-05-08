@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import React from "react";
 
@@ -12,7 +13,10 @@ const CommentItem = ({ message, name, times }) => {
                 />
                 <h3 className="text-sm font-medium text-primary">{name}</h3>
                 <p className="text-xs ml-auto text-neutral-400 flex items-center">
-                    <i className="fas fa-circle mr-1 text-primary w-2 h-2"></i>
+                    <FontAwesomeIcon
+                        icon={"circle"}
+                        className="text-primary mr-1 h-2 w-2"
+                    />
                     {times}
                 </p>
             </div>

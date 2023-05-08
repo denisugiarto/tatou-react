@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
 const MyActivityCard = ({ title, type = "live" }) => {
@@ -7,16 +8,17 @@ const MyActivityCard = ({ title, type = "live" }) => {
         archive: "bg-success-surface text-success",
         succeeded: "bg-neutral-100 text-black",
     };
-    console.log(cardType.live)
+    console.log(cardType.live);
     return (
         <div className="py-2 px-4 border-b">
             <div className="flex gap-2 items-center mt-2">
                 <h6 className="grow font-medium text-sm">{title}</h6>
                 <button className="btn bg-primary-surface !btn-sm border-primary-surface text-primary">
-                    Edit<i className="fas fa-edit ml-2"></i>
+                    Edit
+                    <FontAwesomeIcon icon={"edit"} className="ml-2" />
                 </button>
                 <button className="btn !btn-sm bg-error-surface text-error">
-                    <i className="fas fa-trash-alt"></i>
+                    <FontAwesomeIcon icon={"trash-alt"} />
                 </button>
             </div>
             <div className="mt-2 flex items-center gap-2">
@@ -36,11 +38,17 @@ const MyActivityCard = ({ title, type = "live" }) => {
                     <p className="text-xs">Hapu Name</p>
                     <div className="flex mt-1 gap-2 overflow-x-auto">
                         <div className="flex-none px-2 py-1 bg-primary-surface text-xs rounded">
-                            <i className="fas fa-hand-holding-usd mr-1 text-primary"></i>
+                            <FontAwesomeIcon
+                                icon={"hand-holding-usd"}
+                                className="text-primary mr-1"
+                            />
                             Funding 23%
                         </div>
                         <div className="flex-none px-2 py-1 bg-primary-surface text-xs rounded">
-                            <i className="fas fa-hard-hat mr-1 text-primary"></i>
+                            <FontAwesomeIcon
+                                icon={"hard-hat"}
+                                className="text-primary mr-1"
+                            />
                             <span className="text-error">15</span>/20
                             Worker/Mahi
                         </div>

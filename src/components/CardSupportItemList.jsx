@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
 const CardSupportItemList = ({ isDetail = false, times, donations }) => {
@@ -20,7 +21,10 @@ const CardSupportItemList = ({ isDetail = false, times, donations }) => {
                         if (index !== 0) {
                             return (
                                 <>
-                                    <i className="fas fa-circle text-primary mx-1 h-2 w-2" />
+                                    <FontAwesomeIcon
+                                        icon={"circle"}
+                                        className="text-primary mx-1 h-2 w-2"
+                                    />
                                     {item}
                                 </>
                             );

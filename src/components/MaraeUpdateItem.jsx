@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const MaraeUpdateItem = () => {
@@ -5,7 +6,7 @@ const MaraeUpdateItem = () => {
         <section className="px-4 py-2 bg-white mt-4">
             <div className="flex gap-2">
                 <div className="flex-none text-primary bg-primary-surface border border-primary-border rounded-lg w-6 h-6 text-center">
-                    <i className="fas fa-bell"></i>
+                    <FontAwesomeIcon icon={"bell"} />
                 </div>
                 <h2 className="basis-8/12 font-medium text-primary">
                     Buy material for Buy material for Buy material for

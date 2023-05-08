@@ -1,6 +1,7 @@
 import Image from "next/image";
 import CommentItem from "./CommentItem.astro";
 import FormReply from "./FormReply.astro";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const MessageItem = ({
     name,
@@ -24,7 +25,10 @@ const MessageItem = ({
                     </p>
                 </div>
                 <p className="flex-none text-xs text-neutral-400 ml-auto flex items-baseline">
-                    <i className="fas fa-circle text-primary mr-2 w-2 h-2"></i>9
+                    <FontAwesomeIcon
+                        icon={"circle"}
+                        className="text-primary mr-1 h-2 w-2"
+                    />
                     Minutes
                 </p>
             </div>
@@ -37,7 +41,7 @@ const MessageItem = ({
             <div className="flex gap-4 items-center">
                 <div className="flex items-center gap-2">
                     <button className="btn !btn-sm btn-circle btn-primary bg-primary-pressed text-white">
-                        <i className="fas fa-comment-dots"></i>
+                        <FontAwesomeIcon icon={"comment-dots"} />
                     </button>
                     {comments.length > 0 && (
                         <p className="text-sm font-medium">{comments.length}</p>
@@ -51,7 +55,7 @@ const MessageItem = ({
                                 : "btn-primary hover:btn-error hover:text-white"
                         }`}
                     >
-                        <i className="fas fa-heart"></i>
+                        <FontAwesomeIcon icon={"heart"} />
                     </button>
                     <p className="text-sm font-medium grow">
                         {isAuthorLike && "You and"} 2K People{" "}
@@ -62,7 +66,7 @@ const MessageItem = ({
                     href={shareLink}
                     className="btn btn-circle bg-black text-white hover:bg-primary !btn-sm flex items-center ml-auto"
                 >
-                    <i className="fas fa-share-alt"></i>
+                    <FontAwesomeIcon icon={"share-alt"} />
                 </a>
             </div>
             {comments.length > 0 && (

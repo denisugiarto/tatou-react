@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const ModalShare = ({ id }) => {
@@ -6,12 +7,18 @@ const ModalShare = ({ id }) => {
             <div className={`modal-box relative text-center`}>
                 <div className="text-right mb-2">
                     <a href="" className="btn btn-circle btn-error !btn-xs">
-                        <i className="far fa-times-circle text-white text-base"></i>
+                        <FontAwesomeIcon
+                            icon={["far", "times-circle"]}
+                            className="text-white text-base"
+                        />
                     </a>
                 </div>
                 <div className="flex gap-2 sm:gap-4 justify-center mb-4">
                     <button className="btn btn-circle bg-[#4267B2] text-white hover:bg-[#4267B2]">
-                        <i className="fab fa-facebook-f text-2xl"></i>
+                        <FontAwesomeIcon
+                            icon={["fab", "facebook-f"]}
+                            className="text-2xl"
+                        />
                     </button>
                     <button className="btn btn-circle bg-[#00B900] hover:bg-[#00b900]">
                         <svg
@@ -30,10 +37,16 @@ const ModalShare = ({ id }) => {
                         </svg>
                     </button>
                     <button className="btn btn-circle bg-[#0077B5] hover:bg-[#0077B5] text-white">
-                        <i className="fab fa-linkedin-in text-2xl"></i>
+                        <FontAwesomeIcon
+                            icon={["fab", "linkedin-in"]}
+                            className="text-2xl"
+                        />
                     </button>
                     <button className="btn btn-circle bg-[#1DA1F2] hover:bg-[#1DA1F2] text-white">
-                        <i className="fab fa-twitter text-2xl"></i>
+                        <FontAwesomeIcon
+                            icon={["fab", "twitter"]}
+                            className="text-2xl"
+                        />
                     </button>
                     <button className="btn btn-circle bg-[#2AABEE] hover:bg-[#2AABEE]">
                         <svg
@@ -50,15 +63,20 @@ const ModalShare = ({ id }) => {
                         </svg>
                     </button>
                     <button className="btn btn-circle bg-[#0DC143] hover:bg-[#0DC143] text-white">
-                        <i className="fab fa-whatsapp text-2xl"></i>
+                        <FontAwesomeIcon
+                            icon={["fab", "whatsapp"]}
+                            className="text-2xl"
+                        />
                     </button>
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                     <button className="btn btn-outline font-medium">
-                        <i className="fas fa-link mr-2"></i>Copy URL
+                        <FontAwesomeIcon icon={"link"} className="mr-2" />
+                        Copy URL
                     </button>
                     <button className="btn btn-outline font-medium">
-                        <i className="fas fa-envelope mr-2"></i>Email
+                        <FontAwesomeIcon icon={"envelope"} className="mr-2" />
+                        Email
                     </button>
                 </div>
             </div>

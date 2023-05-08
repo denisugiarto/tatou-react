@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Modal from "./Modal.astro";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ModalImagePreview = () => {
     return (
@@ -11,7 +12,8 @@ const ModalImagePreview = () => {
                     alt=""
                 />
                 <button className="absolute top-2 right-2 btn btn-error !btn-xs">
-                    <i className="fas fa-trash-alt mr-1"></i>Delete
+                    <FontAwesomeIcon icon={"trash-alt"} className="mr-1" />
+                    Delete
                 </button>
             </div>
         </Modal>

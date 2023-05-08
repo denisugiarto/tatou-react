@@ -12,7 +12,6 @@ export default function Home() {
             <Navbar
                 isLogin={true}
                 isLoginActive={true}
-                slot="header-content"
                 title="Tatou"
             />
             <div className="container mt-4 px-0 relative flex flex-col gap-4 last:mb-20">

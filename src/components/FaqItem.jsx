@@ -1,6 +1,6 @@
 import React from "react";
 
-const FaqItem = ({ question, answer }) => {
+const FaqItem = ({ question, answer, children }) => {
     return (
         <div tabindex="0" className="collapse collapse-arrow">
             <div className="collapse-title font-medium text-primary after:!h-3 after:!w-3 after:!shadow-[3px_3px]">
@@ -9,7 +9,7 @@ const FaqItem = ({ question, answer }) => {
             <div className="collapse-content">
                 <p className="text-sm">
                     {answer}
-                    <slot />
+                    {children}
                 </p>
             </div>
         </div>

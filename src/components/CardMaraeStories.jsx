@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const CardMaraeStories = () => {
@@ -23,7 +24,7 @@ const CardMaraeStories = () => {
                     </p>
                     <div className="flex justify-between">
                         <button className="btn btn-circle btn-primary text-white">
-                            <i className="fas fa-love"></i>
+                          <FontAwesomeIcon icon={"love"} />
                         </button>
                     </div>
                 </div>
