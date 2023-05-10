@@ -83,7 +83,7 @@ module.exports = {
                 },
             },
             fontFamily: {
-                sans: ["var(--font-montserrat)", "sans-serif"],
+                sans: ["var(--font-montserrat)"],
             },
         },
     },

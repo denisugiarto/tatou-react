@@ -15,11 +15,14 @@ import {
     faKey,
     faTimesCircle,
     faCheckCircle,
-    faEnvelope, faUser, fas
+    faEnvelope,
+    faUser,
+    fas,
 } from "@fortawesome/free-solid-svg-icons";
 import { Montserrat } from "next/font/google";
 const montserrat = Montserrat({
     subsets: ["latin"],
+    display: "swap",
     variable: "--font-montserrat",
 });
 
@@ -37,7 +40,8 @@ library.add(
     faTimesCircle,
     faCheckCircle,
     faEnvelope,
-    faUser, fas
+    faUser,
+    fas
 );
 export default function App({ Component, pageProps }) {
     return (
