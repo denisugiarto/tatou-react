@@ -20,6 +20,8 @@ import {
     fas,
 } from "@fortawesome/free-solid-svg-icons";
 import { Montserrat } from "next/font/google";
+import { Provider } from "react-redux";
+import store from "../store/store";
 const montserrat = Montserrat({
     subsets: ["latin"],
     display: "swap",
@@ -45,8 +47,10 @@ library.add(
 );
 export default function App({ Component, pageProps }) {
     return (
-        <main className={`${montserrat.variable} font-sans`}>
-            <Component {...pageProps} />
-        </main>
+        <Provider store={store}>
+            <main className={`${montserrat.variable} font-sans`}>
+                <Component {...pageProps} />
+            </main>
+        </Provider>
     );
 }
