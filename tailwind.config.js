@@ -3,6 +3,20 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: ["./src/**/*.{js,jsx}"],
+    safelist: [
+        "alert",
+        "alert-warning",
+        "alert-info",
+        "alert-success",
+        "alert-error",
+        "border-b-1",
+        "grid-cols-3",
+        "grid-cols-4",
+        "text-info",
+        "bg-info-surface",
+        "bg-error-surface",
+        "bg-success-surface",
+    ],
     theme: {
         boxShadow: {
             DEFAULT: "0 2px 2px -1px rgba(54,54,54,0.03)",
