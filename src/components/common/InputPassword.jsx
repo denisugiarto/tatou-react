@@ -11,7 +11,8 @@ const InputPassword = ({
 }) => {
     const [showPassword, setShowPassword] = useState(false);
     const inputType = showPassword ? "text" : "password";
-    function showHidePasswordHandler() {
+    function showHidePasswordHandler(event) {
+        event.preventDefault();
         setShowPassword(!showPassword);
         console.log(showPassword);
     }
@@ -36,7 +37,8 @@ const InputPassword = ({
                 </div>
                 <button
                     className="absolute top-3 right-4 text-secondary"
-                    onClick={showHidePasswordHandler}
+                    onClick={(event) => showHidePasswordHandler(event)}
+                    title={`${!showPassword ? "Show password" : "Hide password"}`}
                 >
                     <FontAwesomeIcon
                         icon={`${showPassword ? "eye-slash" : "eye"}`}
