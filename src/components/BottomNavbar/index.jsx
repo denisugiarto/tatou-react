@@ -21,7 +21,7 @@ const BottomNavbar = ({ activeMenu = 0}) => {
         {
             title: "Account",
             icon: "fa-user-circle",
-            link: "/account-login",
+            link: "/account",
         },
     ];
 
