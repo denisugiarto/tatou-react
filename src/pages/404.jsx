@@ -13,16 +13,16 @@ const PageNotFound = () => {
                 slot="header-content"
                 title="Tatou"
             />
-            <div class="container">
+            <div className="container">
                 <Image
                     src="/assets/illustrations/error-404.svg"
-                    class="mt-20 mx-auto"
+                    className="mt-20 mx-auto"
                     height={320}
                     width={384}
                     alt="illustration page not found"
                 />
-                <div class="text-center">
-                    <Link href="/" class="btn btn-primary mt-8">
+                <div className="text-center">
+                    <Link href="/" className="btn btn-primary mt-8">
                         Back to Home
                     </Link>
                 </div>
